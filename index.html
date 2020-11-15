@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+	<meta charset="utf-8">
+	<title>CSMA CD</title>
+</head>
+<style type="text/css">
+	body{
+		margin-left: 3em;
+		margin-top: 4em;
+		margin-right: 3em;
+		font-family: Helvetica;
+		background-color: #FB62F6;
+
+	}
+	h1{
+		color: #441151;
+	}
+	.txt{
+		margin-left: 50px;
+		margin-bottom: 1em;
+	}
+	.txt2{
+		margin-left: 34px;
+		margin-bottom: 1em;
+	}
+	.res{
+		background-color: #07BEB8;
+		margin-left: 3rem;
+		width: 10rem;
+	}
+	hr{
+		width: 650px;
+		margin: 0;
+	}
+</style>
+<body>
+	<h1>Ejemplo de algoritmo CSMA CD</h1>
+	<p>Todo el proceso del algoritmo se mostrara en la consola, los resultados en la página<br><br>
+	El número máximo de colisiones es igual a 5<br><br>Nota: Es muy poco probable que se sobrepase el contador de colisiones</p><hr><br>
+	<label>Ingresa el primer mensaje<input type="text" id="msj1" class="txt" /></label><br>
+	<label>Ingresa el segundo mensaje<input type="text" id="msj2" class="txt2" /></label><br>
+	
+	<input type="button" value="Generar con tiempos aleatorios" onclick="proceso(0)" />
+	<input type="button" value="Generar con tiempos iguales" onclick="proceso(1)"/><br><br>
+	<p><strong>Equipo A:</strong>
+		<div id="resA" class="res"></div>
+	</p>
+	<p><strong>Equipo B:</strong>
+		<div id="resB" class="res"></div>
+	</p>
+
+	<script type="text/javascript" src="js/logica.js"></script>
+</body>
+</html>
